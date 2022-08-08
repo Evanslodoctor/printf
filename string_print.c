@@ -1,3 +1,8 @@
+/**
+ * string_print -> function to print the string of a charcter
+ * @string: string
+ * Return: Return number of string cvharacters
+ */
 #include "main.h"
 
 int string_print(char *string)

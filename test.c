@@ -1,10 +1,15 @@
+/**
+ * main -> Test files
+ * Return: Always 0
+ */
+
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
 
 int main(void)
 {
-	int n, a, b , c;
+	int n, a, b, c;
 
 	n = _printf("Hello world");
 	printf("\nn = %d \n", n);
