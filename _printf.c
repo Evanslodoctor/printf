@@ -1,3 +1,9 @@
+/**
+ * _printf -> A function that rpints to the stdout
+ * @format: format is a character string
+ * Return: Returns the number of character prnted
+ * (excluding the null bytes to ennd output to strings)
+ */
 #include "main.h"
 #include <stdarg.h>
 #include <stdio.h>
@@ -8,6 +14,7 @@ int _printf(const char *format, ...)
 	int i;
 
 	va_list data;
+
 	va_start(data, format);
 
 	for (i = 0; format[i] != '\0';)
@@ -19,7 +26,7 @@ int _printf(const char *format, ...)
 			count += _putchar(format[i]);
 			i++;
 		}
-		else if (format[i] == '%' && format[i+1] != ' ')
+		else if (format[i] == '%' && format[i + 1] != ' ')
 		{
 			switch (format[i + 1])
 			{
@@ -29,6 +36,9 @@ int _printf(const char *format, ...)
 					break;
 				case 's':
 					count += string_print(va_arg(data, char *));
+					break;
+				case '%':
+					count += _putchar('%');
 					break;
 				default:
 					break;
