@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdarg.h>
-#include <stdio.h>
+
 /**
  * _printf -> A function that rpints to the stdout
  * @format: format is a character string
