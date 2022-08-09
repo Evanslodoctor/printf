@@ -1,14 +1,24 @@
+<<<<<<< HEAD
 #include "main.h"
 
+=======
+#include "holberton.h"
+>>>>>>> 17bccdb641d7bb76b1d76d9112263d8ae16e9ad3
 /**
  * printf_int - prints integer
  * @args: argument to print
  * Return: number of characters printed
  */
+<<<<<<< HEAD
 
 int printf_int(va_list args)
 {
 int n = va_arg(args, int);
+=======
+int printf_int(va_list args)
+{
+	int n = va_arg(args, int);
+>>>>>>> 17bccdb641d7bb76b1d76d9112263d8ae16e9ad3
 	int num, last = n % 10, digit, exp = 1;
 	int  i = 1;
 
