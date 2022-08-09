@@ -1,12 +1,12 @@
+#include "main.h"
+#include <stdarg.h>
+#include <stdio.h>
 /**
  * _printf -> A function that rpints to the stdout
  * @format: format is a character string
  * Return: Returns the number of character prnted
  * (excluding the null bytes to ennd output to strings)
  */
-#include "main.h"
-#include <stdarg.h>
-#include <stdio.h>
 
 int _printf(const char *format, ...)
 {
